@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+
+    <nav>
+        <a href=""><img src="" alt="">x</a>
+        <div style="display: flex;flex-direction: row; gap: 12px;">
+            <li><a href="" class="btn">Registrovat se</a></li>
+            <li><a href="" class="btn">Přihlásit se</a></li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <div class="options">
+                <label for="length">Password Length: <span id="lengthValue">8</span></label>
+                <input type="range" id="length" name="length" min="4" max="20" value="8">
+                <div class="include">
+                    <label class="case">
+                        <input type="checkbox" id="uppercase" name="uppercase">
+                        <span class="checkmark"></span>
+                        Include Uppercase Letters
+                    </label>
+                    <label class="case">
+                        <input type="checkbox" id="numbers" name="numbers">
+                        <span class="checkmark"></span>
+                        Include Numbers
+                    </label>
+                    <label class="case">
+                        <input type="checkbox" id="specialCharacters" name="specialCharacters">
+                        <span class="checkmark"></span>
+                        Include Special Characters
+                     </label>
+                </div>
+            </div>
+            <button id="generate">Generate Password</button>
+            <div class="password" id="password"></div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

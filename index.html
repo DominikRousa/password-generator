@@ -6,7 +6,7 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="ui.css">
 </head>
-<body>
+<body> 
 
     <nav>
         <a href=""><img src="" alt="">x</a>
@@ -42,9 +42,24 @@
             </div>
             <button id="generate">Generate Password</button>
             <div class="password" id="password"></div>
+
             
         </div>
+
     </div>
+
+    <div class="container">
+        <div class="containerSave">
+            <h1>Uložit heslo</h1>
+            <input type="text" id="noteInputName" placeholder="Write a name...">
+            <input type="text" id="noteInputPass" placeholder="Write a password...">
+            <button id="saveBtn">Save Password</button>
+            <div id="notesContainer"></div>
+        </div>
+    </div>
+
+
+    
 
     <script src="script.js"></script>
 </body>
